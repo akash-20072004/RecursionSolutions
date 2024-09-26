@@ -1,0 +1,24 @@
+package ticketz;
+public class ticketz {
+	//Finding the length of string using recursion
+	public static int lengthofstring(String str,int i,int count) {
+		
+		if(i==str.length()) {
+			return count;
+		}
+		count++;
+		return lengthofstring(str,i+1,count);
+		
+		
+	}
+public static void main(String[] args) {
+	
+	String str="Bhanwar Singh Rathore";
+	int result=lengthofstring(str,0,0);
+	System.out.print(result);
+	
+
+
+
+}
+}
