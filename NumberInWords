@@ -1,0 +1,22 @@
+package ticketz;
+public class ticketz {
+	public static void recursion(int number) {
+		String digits[]= {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+		if(number==0) {
+			return;
+		}
+		int lastdigit=number%10;
+		recursion(number/10);
+		System.out.print(digits[lastdigit]+" ");
+	}
+public static void main(String[] args) {
+	
+	
+	recursion(58648);
+	System.out.println();
+
+
+
+}
+}
+	
