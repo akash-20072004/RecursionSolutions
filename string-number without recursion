@@ -1,0 +1,13 @@
+package ticketz;
+
+public class name {
+	public static void function1(String[] numbers,String input) {
+		for(int i=0;i<input.length();i++) {
+			System.out.print(numbers[input.charAt(i)-'0']+" ");
+		}
+	}
+public static void main(String[] args) {
+	String[] numbers= {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+	function1(numbers,"1927");
+}
+}
