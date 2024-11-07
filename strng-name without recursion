@@ -1,0 +1,17 @@
+package ticketz;
+
+public class name {
+	public static void function1(int i,String[] numbers,String s) {
+		//Base case
+		if(i==s.length()) {
+			return;
+		}
+		function1(i+1,numbers,s);
+		//Backtracking step
+		System.out.print(numbers[Character.getNumericValue(s.charAt(i))]+" ");
+	}
+public static void main(String[] args) {
+	String[] numbers= {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+	function1(0,numbers,"1927");
+}
+}
